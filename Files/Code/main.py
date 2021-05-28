@@ -5,7 +5,7 @@ from selenium import webdriver
 from time import sleep
 from selenium.webdriver.common.keys import Keys
 import keyboard
-driver = webdriver.Chrome("E:\\chromedriver.exe")#Path Of The Chromedriver
+driver = webdriver.Chrome("#Path Of The Chromedriver")
 driver.get("https://accounts.google.com/o/oauth2/auth/identifier?client_id=717762328687-iludtf96g1hinl76e4lc1b9a82g457nn.apps.googleusercontent.com&scope=profile%20email&redirect_uri=https%3A%2F%2Fstackauth.com%2Fauth%2Foauth2%2Fgoogle&state=%7B%22sid%22%3A1%2C%22st%22%3A%2259%3A3%3Abbc%2C16%3A1e10afed606ab28c%2C10%3A1622115835%2C16%3A4fd48bbee178515d%2Ca8a48ab5363d05a7b8d1430d3fc4e222fad429b6fd3847d13f1444f9d092fb71%22%2C%22cdl%22%3Anull%2C%22cid%22%3A%22717762328687-iludtf96g1hinl76e4lc1b9a82g457nn.apps.googleusercontent.com%22%2C%22k%22%3A%22Google%22%2C%22ses%22%3A%22fbe67d41c240458e9ae21024ca96307b%22%7D&response_type=code&flowName=GeneralOAuthFlow")#For Security Purpose Google Does Not Allow Selenium To Sign Account So We Need To Sign In With Stack OverFlow
 sleep(2)
 gmail = driver.find_element_by_xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input")
